@@ -1171,7 +1171,7 @@ $(function () {
   if (window.location.hostname === 'localhost') {
     var gClient = new Client(`${isSecure ? 'wss' : 'ws'}://${location.host}`)
   } else {
-    var gClient = new Client(`${isSecure ? 'wss' : 'ws'}://${location.host}`)
+    var gClient = new Client('wss://mpp.smp-meow.net/')
   }
   if (loginInfo) {
     gClient.setLoginInfo(loginInfo)
