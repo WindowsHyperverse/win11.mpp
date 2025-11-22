@@ -7,7 +7,7 @@ const translation = window.i18nextify.init({
 $(function () {
   translation.start()
   console.log(
-    "%cWelcome to MPP's developer console~! owo",
+    "%cWelcome to MPP's developer console",
     'color:blue; font-size:20px;'
   )
   console.log(
@@ -1171,7 +1171,7 @@ $(function () {
   if (window.location.hostname === 'localhost') {
     var gClient = new Client(`${isSecure ? 'wss' : 'ws'}://${location.host}`)
   } else {
-    var gClient = new Client('wss://mpp.lapishusky.dev/')
+    var gClient = new Client('wss://multiplayerpiano.org/')
   }
   if (loginInfo) {
     gClient.setLoginInfo(loginInfo)
