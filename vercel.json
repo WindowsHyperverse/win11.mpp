@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "echo 'No build required'",
+  "outputDirectory": ".",
+  "public": true,
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/:path((?!(?:index\\.html|css|js|images|sounds|locales|favicon\\.ico|robots\\.txt|sitemap\\.xml)$).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+
